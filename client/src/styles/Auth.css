@@ -1,0 +1,86 @@
+.auth-main {
+  background-color: rgb(244, 244, 244);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.auth {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  height: 75%;
+}
+
+.auth-welcome{
+  display: flex;
+  flex-direction: column; 
+  justify-content: start;
+  margin-top: 2rem;
+}
+
+.auth-welcome-first{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap : 0.7rem;
+}
+
+.auth-welcome-first h1{
+  margin-bottom: 1rem;
+}
+
+.auth-welcome-icon{
+  font-size: 2rem;
+  margin-top: -15px;
+  color: yellow;
+  stroke: black;
+  stroke-width: 10;
+}
+
+.auth-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.auth-buttons button {
+  width: 40%;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  position: relative; 
+  font-size: 1.1rem;
+}
+
+.auth-buttons button:focus {
+  outline: none;
+}
+
+.auth-buttons button.active {
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.auth-buttons button::after {
+  content: '';
+  display: block;
+  width: 0; 
+  height: 3px;
+  background-color: #007BFF;
+  transition: width 0.3s ease; 
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.auth-buttons button.active::after {
+  width: 100%;
+}
