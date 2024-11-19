@@ -168,6 +168,5 @@ def handle_message(data):
         }, to=group_name)
 
 
-
 if __name__ == '__main__': 
     socketio.run(app, debug=True)
